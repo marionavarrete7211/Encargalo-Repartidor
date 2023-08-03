@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menuinicio"
+            android:icon="@drawable/is_iconhome"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_miperfil"
+            android:icon="@drawable/is_iconmenuperfil"
+            android:title="@string/menu_miperfil" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/is_iconmenupedidos"
+            android:title="@string/menu_mispedidos" />
+        <item
+            android:id="@+id/nav_notificacion"
+            android:icon="@drawable/is_iconmenunotificaciones"
+            android:title="@string/menu_misnotificaciones" />
+        <item
+            android:id="@+id/nav_soporte"
+            android:icon="@drawable/is_iconmenusoporte"
+            android:title="@string/menu_soporte" />
+    </group>
+</menu>

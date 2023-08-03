@@ -1,0 +1,201 @@
+<resources><!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+    <string name="app_name">Repartidor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="toolbar_is">Crear una cuenta</string>
+
+    <!-- OPCIONES DEL MENU -->
+
+    <string name="menu_inicio">INICIO</string>
+    <string name="menu_miperfil">MI PERFIL</string>
+    <string name="menu_mispedidos">PEDIDOS</string>
+    <string name="menu_misnotificaciones">NOTIFICACIONES</string>
+    <string name="menu_soporte">SOPORTE</string>
+
+    <!-- Modulo Inicio de sesion(is)  -->
+
+    <string name="is_varstringmensaje">Envia tus productos a más personas</string>
+    <string name="is_varstringloginfacebook">Continuar con Facebook</string>
+    <string name="is_varstringlogingoogle">Continuar con Google</string>
+    <string name="is_varstringnombre">Nombre</string>
+    <string name="is_varstringapellido">Apellido</string>
+    <string name="is_varstringcorreo">Correo</string>
+    <string name="is_varstringtelefono">Teléfono</string>
+    <string name="is_varstringbtnregistrar">Registrar</string>
+    <string name="is_varstringchckterminos">Acepto los Términos y Condiciones y la Política de seguridad</string>
+    <string name="is_varstringbtnreenviar">Reenviar código</string>
+    <string name="is_varstringcontinuar">Continuar</string>
+    <string name="is_varstringtituloverificacion">Ingrese el código de verificación</string>
+    <string name="is_varstringsubtituloverificacion">Sele a enviado un código de verificación a tu cuenta de correo</string>
+
+    <!-- Modulo Perfil(pf)  -->
+
+    <string name="pf_varstringnombre">Nombre</string>
+    <string name="pf_varstringapellidos">Apellidos</string>
+    <string name="pf_varvarstringsubtitulo1">PERFIL BASICO (información al público)</string>
+    <string name="pf_varstringtelefono">Teléfono</string>
+    <string name="pf_varstringdireccion">Dirección</string>
+    <string name="pf_varstringtienda">Tienda</string>
+    <string name="pf_varstringvehiculo">Vehículo</string>
+    <string name="pf_varstringplaca">Placa</string>
+    <string name="pf_varstringsubtitulo2">CARGAR DOCUMENTOS</string>
+    <string name="pf_varstringregistrodeveh_culo">Registro de Vehículo</string>
+    <string name="pf_varstringregistrodelicencia">Registro de Licencia</string>
+    <string name="pf_varstringregistro_de_antecedentes">Registro de antecedentes</string>
+    <string name="pf_varstringtarjeta_de_propiedad">Tarjeta de propiedad</string>
+    <string name="pf_varstringregistrar">Registrar</string>
+    <string name="pf_varstringsuba_la_imagen_dpf_varstringel_documento_requerido">Suba la imagen del documento requerido</string>
+    <string name="pf_varstringdocumentos_agregados_correctamente">Documentos agregados correctamente</string>
+    <string name="pf_varstringeso_fue_rapido">Eso fue rápido!</string>
+    <string name="pf_varstringvolver_a_inicio">Volver a inicio</string>
+
+    <string-array name="vehiculos">
+        <item>VEHICULO</item>
+        <item>MOTO</item>
+        <item>BICICLETA</item>
+        <item>AUTO</item>
+        <item>CAMION</item>
+        <item>SKUTER</item>
+    </string-array>
+
+    <string-array name="vehiculos2">
+        <item>VEHICULO</item>
+        <item>MOTO</item>
+        <item>BICICLETA</item>
+        <item>AUTO</item>
+        <item>CAMION</item>
+        <item>PATINES</item>
+    </string-array>
+
+    <string-array name="estados">
+        <item>SELECCIONE</item>
+        <item>SOLICITADO</item>
+        <item>ACEPTADO</item>
+        <item>RECHAZADO</item>
+        <item>EN PREPARACIÓN</item>
+        <item>PREPARADO</item>
+        <item>EN CAMINO</item>
+        <item>ENTREGADO</item>
+        <item>RECLAMADO</item>
+    </string-array>
+
+    <!-- Modulo Notificaciones(nt)  -->
+
+    <string name="nt_varstringsubtitulo">Marca las notificaciones que desee para mantenerse al tanto de los pedidos</string>
+    <string name="nt_varstringchckmensajes">Mensajes</string>
+    <string name="nt_varstringchckactividad_de_cuenta">Actividad de cuenta</string>
+    <string name="nt_varstringchcknueva_orden">Nueva orden</string>
+    <string name="nt_varstringchckseguimiento_de_ordenes">Seguimiento de ordenes</string>
+    <string name="nt_varstringchckorden_completada">Orden completada</string>
+
+    <!-- Modulo Pedidos(pe)  -->
+
+    <string name="pe_varstringbtndetalle">Detalle</string>
+    <string name="pe_varstringchat">Chat</string>
+    <string name="pe_varstringir_a_recoger_al_pedido">Ir a recoger al pedido</string>
+    <string name="pe_varstringorden_en_curso">Orden en curso</string>
+    <string name="pe_varstringhistorial_de_ordenes">Historial de ordenes</string>
+    <string name="pe_varstringcobros_realizados">Cobros realizados</string>
+    <string name="pe_varstringcobrar">Cobrar</string>
+    <string name="pe_varstringseguro_que_desea_completar_la_entrega">¿Seguro que desea completar la entrega?</string>
+    <string name="pe_varstringorden_entregada_exitosamente">Orden N°30212548 fue entregada exitosamente</string>
+    <string name="pe_varstringgracias">Gracias!</string>
+    <string name="pe_varstringnoexistependientes">No existe ordenes pendientes</string>
+    <string name="pe_varstringdetalle">Detalle</string>
+    <string name="pe_varstringitemcliente">Cliente :</string>
+    <string name="pe_varstringitemidorden">ID ORDEN :</string>
+    <string name="pe_varstringitemfechao">Orden emitida :</string>
+    <string name="pe_varstringitemestado">Estada :</string>
+
+    <string name="mio_varstrchatcliente7">Escribir aqui</string>
+
+    <!-- Modulo Soporte(sp)  -->
+
+    <string name="sp_varstringbtncentro_de_ayuda">Centro de ayuda</string>
+    <string name="sp_varstringbtnteminos_y_condiciones">Términos y condiciones</string>
+    <string name="sp_varstringbtncompartir_encargalo">Compartir encargalo</string>
+    <string name="sp_varstringbtnacerca_de">Acerca de</string>
+    <string name="sp_varstringbtncerrar_sesion">Cerrar sesión</string>
+
+    <!--  SO_02_1  -->
+    <string name="menu_soporte_centro_de_ayuda">Centro de ayuda</string>
+    <string name="menu_soporte_centro_de_ayuda_btn_1">Preguntas Frecuentes</string>
+    <string name="menu_soporte_centro_de_ayuda_btn_2">Videos Demostrativos</string>
+    <string name="menu_soporte_centro_de_ayuda_btn_3">Realizar una Consulta</string>
+    <!--  SO_02_2  -->
+    <string name="menu_soporte_Preguntas_Frecuentes">Preguntas Frecuentes</string>
+    <string name="menu_soporte_Preguntas_Frecuentes_preg1">Pregunta 1</string>
+    <string name="menu_soporte_Preguntas_Frecuentes_preg2">Pregunta 2</string>
+    <string name="menu_soporte_Preguntas_Frecuentes_preg3">Pregunta 3</string>
+
+    <!--  SO_02_3  -->
+
+    <string name="menu_soporte_Preguntas_Frecuentes_preg1_titulo">Crea tu tienda Virtual</string>
+    <string name="menu_soporte_Preguntas_Frecuentes_preg1_stitulo">Aprende los primeros pasos</string>
+    <string name="menu_soporte_Preguntas_Frecuentes_preg1_detalle">
+        titulo:
+
+        Publicado el:
+
+        Tiempo de duración:
+    </string>
+    <!--  SO_03  -->
+
+    <string name="menu_soporte_notificaciones">Notificaciones</string>
+    <string name="menu_soporte_notificaciones_texto">Activa las notificaciones para mantener al tanto de tu actividad</string>
+    <string name="menu_soporte_notificaciones_switch_1">Mensajes</string>
+    <string name="menu_soporte_notificaciones_switch_2">Actividad de cuenta</string>
+    <string name="menu_soporte_notificaciones_switch_3">Nueva orden</string>
+    <string name="menu_soporte_notificaciones_switch_4">Segumiento de ordenes</string>
+    <string name="menu_soporte_notificaciones_switch_5">Orden completada</string>
+    <!--  SO_04  -->
+    <string name="menu_soporte_terminos_condiciones_terminos">Terminos y condiciones de Uso</string>
+    <string name="menu_soporte_terminos_condiciones_politicas">Política de privacidad y datos personales</string>
+    <string name="menu_soporte_terminos_condiciones_lista_negra">Lista de productos prohibidos a la venta</string>
+    <!--  SO_05  -->
+    <string name="menu_soporte_acerca_de">Acerca de</string>
+    <string name="menu_soporte_acerca_de_btn_1">Website</string>
+    <string name="menu_soporte_acerca_de_btn_2">Facebook</string>
+    <string name="menu_soporte_acerca_de_btn_3">Instagram</string>
+    <string name="menu_soporte_acerca_de_btn_4">Desarrolladores</string>
+    <!--  SO_06  -->
+    <string name="menu_soporte_compartir_website">Website</string>
+    <string name="menu_soporte_compartir_facebook">Facebook</string>
+    <string name="menu_soporte_compartir_instagram">Instagram</string>
+    <!--  SO_06  -->
+    <string name="menu_soporte_Codigo_de_Tienda">Còdigo de tienda</string>
+    <!--  SO_07  -->
+    <string name="menu_soporte_acerca_de_desarrolladores">Desarrolladores</string>
+    <string name="menu_soporte_acerca_de_desarrolladores_txt_autor">Autor</string>
+    <string name="menu_soporte_acerca_de_desarrolladores_txt_cargo">Cargo</string>
+    <string name="menu_soporte_acerca_de_desarrolladores_txt_correo">Correo</string>
+
+    <!-- Modulo Menu(me)  -->
+
+    <string name="me_varstringbienvenido_al_app_repartidor">Bienvenido a Encárgalo</string>
+    <string name="me_varstringcomensar">Comenzar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="re_varstringnombre_de_vehiculo">Modelo de vehiculo</string>
+    <string name="re_varstringplaca_del_vehiculon">Nombre</string>
+    <string name="re_varstringplaca_del_vehiculo">Placa Vehiculo</string>
+    <string name="re_varstringapellidosedit">Apellidos</string>
+    <string name="re_varstringplacaedit">Placa</string>
+    <string name="re_varstringtelefonoedit">Teléfono</string>
+    <string name="re_varstringregistrara">Actualizar</string>
+    <string name="re_varstringcodigo_de_tienda">CODIGO DE TIENDA</string>
+    <string name="re_varstringsolicitar">Solicitar</string>
+    <string name="re_varstringregistrar">Registrar</string>
+
+
+</resources>

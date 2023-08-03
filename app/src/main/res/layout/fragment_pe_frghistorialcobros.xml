@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_400"
+    tools:context="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frghistorialcobros">
+    <!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_height="50dp"
+        android:entries="@array/vehiculos"
+        android:background="@drawable/redondeado_blanco" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pe_hicrcvwlistacobros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

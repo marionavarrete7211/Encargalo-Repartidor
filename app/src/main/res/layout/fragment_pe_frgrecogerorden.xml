@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        tools:context="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgrecogerorden"
+        android:layout_height="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:background="@color/grey_400"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redondeado_blanco"
+            android:layout_margin="@dimen/activity_margin"
+            android:padding="@dimen/btn_type_padding"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/pe_rgotxtidorden_fecha_hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/pe_rgotxtidorden"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin"/>
+
+            <TextView
+                android:id="@+id/pe_rgotxtnombretienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/pe_rgotxtdireccion"/>
+
+            <TextView
+                android:id="@+id/pe_rgotxtdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/pe_rgotxtdireccion"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pe_rgobtnDetalle"
+                    style="@style/textcolor3"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/containedbtn_transparente"
+                    android:text="@string/pe_varstringbtndetalle"/>
+
+                <Button
+                    android:id="@+id/pe_rgobtnChat"
+                    style="@style/textcolor3"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/containedbtn_transparente"
+                    android:text="@string/pe_varstringchat"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pe_rgobtnrecoger"
+            style="@style/txtstyle_white"
+            android:layout_width="@dimen/btn_type01_width"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/containedbtn_green"
+            android:text="@string/pe_varstringir_a_recoger_al_pedido"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

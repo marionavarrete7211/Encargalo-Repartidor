@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_400"
+    tools:context="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frghistorialordenes">
+    <!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+    <SearchView
+        android:id="@+id/pe_htosrchlistaordenes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/activity_margin"
+        android:background="@drawable/redondeado_blanco">
+    </SearchView>
+
+    <Spinner
+        android:id="@+id/pe_htospnrlistaordenes"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_margin"
+        android:layout_height="50dp"
+        android:entries="@array/estados"
+        android:background="@drawable/redondeado_blanco" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pe_htorclvlistaordenes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

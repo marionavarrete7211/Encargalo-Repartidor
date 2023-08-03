@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?><!--Creado por Duran Llamacuri Kevin - Universidad Continental - 2022-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_menuinicio">
+
+    <fragment
+        android:id="@+id/nav_miperfil"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Mi_perfil.pf_frgperfil"
+        android:label="@string/menu_miperfil"
+        tools:layout="@layout/fragment_pf_frgperfil" >
+        <action
+            android:id="@+id/action_nav_miperfil_to_nav_cargardocumento"
+            app:destination="@id/nav_cargardocumento" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cargardocumento"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Mi_perfil.pf_frgcargardocumentos"
+        android:label="Cargar documentos"
+        tools:layout="@layout/fragment_pf_frgcargardocumentos" >
+        <action
+            android:id="@+id/action_nav_cargardocumento_to_nav_docsubido"
+            app:destination="@id/nav_docsubido" />
+        <action
+            android:id="@+id/action_nav_cargardocumento_to_nav_miperfil"
+            app:destination="@id/nav_miperfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_docsubido"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Mi_perfil.pf_frgdocagregados"
+        android:label="Cocumentos subidos"
+        tools:layout="@layout/fragment_pf_frgdocagregados" >
+        <action
+            android:id="@+id/action_nav_docsubido_to_nav_menuinicio"
+            app:destination="@id/nav_menuinicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgmenupedidos"
+        android:label="@string/menu_mispedidos"
+        tools:layout="@layout/fragment_pe_frgmenupedidos" >
+        <action
+            android:id="@+id/action_nav_pedidos_to_nav_recogerorden"
+            app:destination="@id/nav_recogerorden" />
+        <action
+            android:id="@+id/action_nav_pedidos_to_nav_historialordenes"
+            app:destination="@id/nav_historialordenes" />
+        <action
+            android:id="@+id/action_nav_pedidos_to_nav_historialcobros"
+            app:destination="@id/nav_historialcobros" />
+        <action
+            android:id="@+id/action_nav_pedidos_to_nav_entregarpedido"
+            app:destination="@id/nav_entregarpedido" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notificacion"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Notificaciones.nt_frgconfiguracion"
+        android:label="@string/menu_misnotificaciones"
+        tools:layout="@layout/fragment_nt_frgconfiguracion" />
+    <fragment
+        android:id="@+id/nav_soporte"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgmenusoporte"
+        android:label="@string/menu_soporte"
+        tools:layout="@layout/fragment_sp_frgmenusoporte" >
+        <action
+            android:id="@+id/action_nav_soporte_to_nav_centrodeayuda"
+            app:destination="@id/nav_centrodeayuda" />
+        <action
+            android:id="@+id/action_nav_soporte_to_nav_terminosYcondiciones"
+            app:destination="@id/nav_terminosYcondiciones" />
+        <action
+            android:id="@+id/action_nav_soporte_to_nav_acercade"
+            app:destination="@id/nav_acercade" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_acercade"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgacercade"
+        android:label="@string/menu_soporte_acerca_de"
+        tools:layout="@layout/fragment_sp_frgacercade" />
+
+    <fragment
+        android:id="@+id/nav_desarrolladores"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgdesarrolladores"
+        android:label="@string/menu_soporte_acerca_de_desarrolladores"
+        tools:layout="@layout/fragment_sp_frgdesarrolladores"/>
+    <!-- OPCIONES DE SOPORTE -->
+
+    <fragment
+        android:id="@+id/nav_centrodeayuda"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgmenucentroayuda"
+        android:label="Centro de ayuda"
+        tools:layout="@layout/fragment_sp_frgmenucentroayuda" >
+        <action
+            android:id="@+id/action_nav_centrodeayuda_to_nav_preguntas"
+            app:destination="@id/nav_preguntas" />
+        <action
+            android:id="@+id/action_nav_centrodeayuda_to_nav_detallevideodemo"
+            app:destination="@id/nav_detallevideodemo" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_preguntas"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgDetallePreguntaFrecuentes"
+        android:label="Preguntas"
+        tools:layout="@layout/fragment_sp__frgdetalle_pregunta_frecuentes">
+        <action
+            android:id="@+id/action_nav_preguntas_to_nav_detallepregunta"
+            app:destination="@id/nav_detallepregunta" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detallepregunta"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgDetallepreguntas"
+        android:label="Detalle"
+        tools:layout="@layout/fragment_sp_frgdetallepreguntas"/>
+
+    <fragment
+        android:id="@+id/nav_detallevideodemo"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgdetallevideodemostrativo"
+        android:label="@string/menu_soporte_centro_de_ayuda_btn_2"
+        tools:layout="@layout/fragment_sp_frgdetallevideodemostrativo" />
+
+    <fragment
+        android:id="@+id/nav_terminosYcondiciones"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Soporte.sp_frgMenuterminoscondiciones"
+        android:label="@string/menu_soporte_terminos_condiciones_terminos"
+        tools:layout="@layout/fragment_sp_frgmenuterminoscondiciones" />
+
+
+
+
+
+
+
+    <!-- OPCIONES DE PEDIDOS -->
+
+    <fragment
+        android:id="@+id/nav_recogerorden"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgrecogerorden"
+        android:label="Orden en curso : Recogiendo"
+        tools:layout="@layout/fragment_pe_frgrecogerorden">
+        <action
+            android:id="@+id/action_nav_recogerorden_to_nav_confirmarproductos"
+            app:destination="@id/nav_confirmarproductos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_confirmarproductos"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgconfirmarproductos"
+        android:label="Orden en curso : Confirmar productos"
+        tools:layout="@layout/fragment_pe_frgconfirmarproductos">
+        <action
+            android:id="@+id/action_nav_confirmarproductos_to_nav_entregarpedido"
+            app:destination="@id/nav_entregarpedido" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_entregarpedido"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgentregarorden"
+        android:label="Orden en curso : Entregar orden"
+        tools:layout="@layout/fragment_pe_frgentregarorden">
+        <action
+            android:id="@+id/action_nav_entregarpedido_to_nav_cobrarpedido"
+            app:destination="@id/nav_cobrarpedido" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_menuinicio"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.me_frginicio"
+        android:label="INICIO"
+        tools:layout="@layout/fragment_me_frginicio">
+        <action
+            android:id="@+id/action_nav_menuinicio_to_nav_miperfil"
+            app:destination="@id/nav_miperfil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cobrarpedido"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgcobrarorden"
+        android:label="Orden en curso : Cobrar orden"
+        tools:layout="@layout/fragment_pe_frgcobrarorden">
+        <action
+            android:id="@+id/action_nav_cobrarpedido_to_nav_ordencompletada"
+            app:destination="@id/nav_ordencompletada" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ordencompletada"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgordencompletada"
+        android:label="Orden en curso : Orden completada"
+        tools:layout="@layout/fragment_pe_frgordencompletada">
+        <action
+            android:id="@+id/action_nav_ordencompletada_to_nav_menuinicio"
+            app:destination="@id/nav_menuinicio" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_historialordenes"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frghistorialordenes"
+        android:label="Mis ordenes"
+        tools:layout="@layout/fragment_pe_frghistorialordenes">
+        <action
+            android:id="@+id/action_nav_historialordenes_to_nav_detallehistorial"
+            app:destination="@id/nav_detallehistorial" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_historialcobros"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frghistorialcobros"
+        android:label="Mis cobros"
+        tools:layout="@layout/fragment_pe_frghistorialcobros"/>
+
+    <fragment
+        android:id="@+id/nav_detallehistorial"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.pe_frgdetallehistorial"
+        android:label="Detalle orden"
+        tools:layout="@layout/fragment_pe_frgdetallehistorial"/>
+
+    <fragment
+        android:id="@+id/nav_misordenesconversacion"
+        android:name="mx.com.encargalo.repartidor.Entidades.Inicio_sesion.ui.Pedidos.mio_frgconversacion"
+        android:label="CONVERSACIÓN"
+        tools:layout="@layout/fragment_mio_frgconversacion" />
+
+</navigation>
